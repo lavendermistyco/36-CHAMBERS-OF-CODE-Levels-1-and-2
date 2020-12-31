@@ -40,7 +40,19 @@ public class ProblemSet01 {
      * Let numbers and symbols stay the way they are.
      */
     public String swapCase(String str) {
-        // code goes here
-        return null;
+        String swappedCase = "";
+        char[] charArray = str.toCharArray();
+        for (int i = 0; i < charArray.length; i++) {
+            char c = charArray[i];
+            if(Character.isUpperCase(c)){
+               c =  Character.isLowerCase(c);
+            }else if(Character.isLowerCase(c)){
+                c = Character.isUpperCase(c);
+            }
+            swappedCase += c + "";
+        }
+
+        return swappedCase;
+
     }
 }
