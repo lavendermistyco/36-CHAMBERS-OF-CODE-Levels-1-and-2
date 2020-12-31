@@ -1,5 +1,6 @@
 package Level01;
 
+
 public class ProblemSet01 {
 
     /**
@@ -45,9 +46,9 @@ public class ProblemSet01 {
         for (int i = 0; i < charArray.length; i++) {
             char c = charArray[i];
             if(Character.isUpperCase(c)){
-               c =  Character.isLowerCase(c);
+               c =  Character.toLowerCase(c);
             }else if(Character.isLowerCase(c)){
-                c = Character.isUpperCase(c);
+                c = Character.toUpperCase(c);
             }
             swappedCase += c + "";
         }
